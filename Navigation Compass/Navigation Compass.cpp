@@ -1,5 +1,8 @@
 //#include "iostream.h"
 /*
+* 轮盘1：每次转动一格的轮盘
+* 轮盘2：每次转动两格的轮盘
+* 轮盘3：每次转动四格的轮盘
 * x:轮盘1和轮盘2联动旋转次数
 * y:轮盘1和轮盘3联动旋转次数
 * z:轮盘2和轮盘3联动旋转次数
@@ -12,14 +15,15 @@
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include "stdio.h"
+#include "stdlib.h"
 int main()
 {
 	unsigned int x, y, z, a, b, c;
-	printf("\r\n轮盘1和终点距离格子数:");
+	printf("\r\n每次转动1格和终点距离格子数:");
 	scanf_s("%d",&a);
-	printf("\r\n轮盘2和终点距离格子数:");
+	printf("\r\n每次转动2格和终点距离格子数:");
 	scanf_s("%d",&b);
-	printf("\r\n轮盘3和终点距离格子数:");
+	printf("\r\n每次转动4格和终点距离格子数:");
 	scanf_s("%d",&c);
 	for (z = 0; z < 100; z++)
 	{
@@ -32,7 +36,8 @@ int main()
 
 					printf("\r\n轮盘1和轮盘2联动旋转次数：%d", x);
 					printf("\r\n轮盘1和轮盘3联动旋转次数：%d", y);
-					printf("\r\n轮盘2和轮盘3联动旋转次数：%d", z);
+					printf("\r\n轮盘2和轮盘3联动旋转次数：%d\r\n", z);
+					system("pause");
 					return 0;
 				}
 			}

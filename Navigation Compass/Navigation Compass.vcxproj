@@ -129,6 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Navigation Compass.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Compass_Example.png" />
+    <Image Include="..\Executable_Example.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
